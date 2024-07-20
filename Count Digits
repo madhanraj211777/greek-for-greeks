@@ -37,11 +37,8 @@ if(N==0){
 }
         while(t>0){
              rem=t%10;
-             if(rem==0){
-                 t=t/10;
-                 continue;
-             }
-            if(N%rem==0){
+             
+            if(rem>0&& N%rem==0){
                 c=c+1;
             }
             t=t/10;
